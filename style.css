@@ -1,46 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
-    background: transparent url("img/main-page-background.png");
-    background-size: 100%;
+    background: transparent url("img/main-page-background.png") no-repeat;
+    background-size: cover;
 }
 
-.company-header {
-    display: inline-block;
+.menu-wrapper {
+    margin: auto;
+    width: 70%;
     margin-top: 79px;
-    margin-left: 369.78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 35px;
+}
 
-    width: 178px;
-    height: 49px;
-
+.company-logo {
     text-align: left;
     
     font-family: "Poppins", sans-serif;
-    font-size: 35px;
+    font-size: 1.7vw;
     font-weight: 600;
 }
 
 .nav-bar {
-    margin-left: 150px;
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 624px;
     height: 35px;
 
     font-family:"Poppins", sans-serif;
-    font-size: 25px;
+    font-size: 1vw;
     font-weight: 300;
 }
 
-.nav-bar a:first-child{
-    margin-left: 0px;
-}
-
-.nav-bar a{
-    margin-left: 62px;
+.resources-button {
+    display: flex;
+    align-items: center;
 }
 
 .login-button {
-    display: inline-block;
     width: 130px;
     height: 55px;
 
@@ -52,7 +52,24 @@ body {
 
 
     font-family:"Poppins", sans-serif;
-    font-size: 20px;
+    font-size: 1vw;
     font-weight: 400;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 250px;
+
+    font-family:"Poppins", sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.img-arrow-down {
+    width: 20px;
+    height: 20px;
 }
 
