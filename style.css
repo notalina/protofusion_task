@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Poppins:wght@300;400;600;700&display=swap');
 
 body {
     background: transparent url("img/main-page-background.png") no-repeat;
@@ -17,7 +17,7 @@ body {
 .company-logo {
     justify-self: end;
     font-family: "Poppins", sans-serif;
-    font-size: 1.7vw;
+    font-size: 1.8vw;
     font-weight: 600;
 }
 
@@ -73,11 +73,6 @@ body {
     font-weight: 400;
 }
 
-.img-arrow-down {
-    width: 20px;
-    height: 20px;
-}
-
 .title-text {
     margin-top: 14vh;
     margin-left:auto;
@@ -103,4 +98,29 @@ body {
     font-size: 1vw;
     line-height: 2.5vh;
     text-align: center;
+}
+
+.start-button {
+    display: flex;
+    align-items: center;
+    margin-top: 25vh;
+    margin-left: 50vw;
+    width: 17vw;
+    height: 11vh;
+    background: #007DFB;
+    border-radius: 62px;
+
+    color: #FFFFFF;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 400;
+
+}
+
+.start-label {
+    margin-left: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10.625vw;
 }
