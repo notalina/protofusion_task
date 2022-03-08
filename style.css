@@ -5,6 +5,11 @@ body {
     background-size: cover;
 }
 
+.white-background {
+    background-image: none;
+}
+
+
 .menu-wrapper {
     margin-top: 7vh;
     display: grid;
@@ -31,6 +36,15 @@ body {
     font-family:"Poppins", sans-serif;
     font-size: 1.2vw;
     font-weight: 300;
+}
+
+.nav-bar a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav-bar a:hover{
+    color: #5271F3;
 }
 
 .resources-button {
@@ -123,4 +137,46 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 10.625vw;
+}
+
+.product-specs-title{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3vh;
+    line-height: 4vh;
+    text-transform: uppercase;
+    color: #007DFB;
+    margin-top: 13vh;
+    margin-left: 41vw;
+}
+
+.specs-img{
+    margin-left: 31vw;
+    max-width: 38vw;
+}
+
+.pagination {
+    margin-left: 42vw;
+    display: flex;
+    width:267px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+.pagination :hover{
+    cursor: pointer;
+}
+
+.chosen-spec {
+    text-align: center;
+    border: 1px solid #007DFB;
+    border-radius: 28px;
+    width: 28px
 }
