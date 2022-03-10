@@ -1,5 +1,20 @@
 document.addEventListener("DOMContentLoaded", function(){
 
+    if (document.documentElement.clientWidth > 425) {
+        ArrangePagination();
+    } else {
+        ArrangeSlider();
+    }
+
+});
+
+function ArrangeSlider(){
+    body = document.getElementsByName("body");
+    paginationElement = document.getElementsByClass("pagination")[0];
+    body.removeChild(paginationElement);
+};
+
+function ArrangePagination(){
     let images_paths = [
         "img/IMG1@2x.png",
         "img/IMG2@2x.png",
@@ -48,5 +63,4 @@ document.addEventListener("DOMContentLoaded", function(){
     arrow_right.addEventListener("click", function(){
         moveToAnotherPage(1);
     });
-});
-
+};
