@@ -5,10 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_product_specs.css" />
-    <script src="pagination_action.js"></script>
+    <script src="product_page_action.js"></script>
 </head>
 <body>
     <div class="product-specs-title">Product specs</div>
+    <div id="toLoad"></div>
     <img class="specs-img" src="img/IMG1@2x.png"/>
     <ul class="pagination" id="pagination">
         <svg id="arrow-left" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><defs><style>.a{fill:none;}.b{fill:#707070;}</style></defs><g transform="translate(24.5 -152.644) rotate(90)"><rect class="a" width="20" height="20" transform="translate(152.644 4.5)"/><g transform="translate(157.644 11.5)"><path class="b" d="M5.453,5.927A1.023,1.023,0,1,0,4.005,7.374l4.477,4.477a1.023,1.023,0,0,0,1.448,0l4.477-4.477a1.023,1.023,0,1,0-1.448-1.447L9.206,9.68Z" transform="translate(-3.706 -5.627)"/></g></g></svg>
@@ -20,10 +21,17 @@
         <li>6</li>
         <svg id="arrow-right" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><defs><style>.a{fill:none;}.b{fill:#707070;}</style></defs><g transform="translate(20) rotate(90)"><rect class="a" width="20" height="20"/><g transform="translate(5 6.477)"><path class="b" d="M1.747,6.223A1.023,1.023,0,1,1,.3,4.777L4.776.3A1.023,1.023,0,0,1,6.224.3L10.7,4.777A1.023,1.023,0,1,1,9.253,6.223L5.5,2.471Z" transform="translate(0 0)"/></g></g></svg>
     </ul>
-    <!-- <div class="slider">
-        <div class="images-row">
-            <img class="current-img" src="img/IMG1@2x.png"/>
-            <img class="next-img" src="img/IMG1@2x.png"/>
+    <div class="slider">
+        <div class="slider-indicators">
+            <li class="current" id="indicator-0"></li>
+            <li id="indicator-1"></li>
+            <li id="indicator-2"></li>
+            <li id="indicator-3"></li>
+            <li id="indicator-4"></li>
+            <li id="indicator-5"></li>
         </div>
-    </div> -->
+        <div class="to-right" id="arrow-right-slider">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 30 25"><defs><style>.c{fill:#5072f0;}</style></defs><path class="c" d="M27.31,15.833,19.322,7.845a1.667,1.667,0,1,1,2.357-2.357L32.512,16.322a1.667,1.667,0,0,1,0,2.357L21.678,29.512a1.667,1.667,0,1,1-2.357-2.357l7.989-7.988H4.667a1.667,1.667,0,0,1,0-3.333Z" transform="translate(-3 -5)"/></svg>
+        </div>
+    </div>
 </body>

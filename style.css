@@ -42,12 +42,18 @@ body {
 
 .nav-bar a:hover{
     color: #5271F3;
+    cursor: pointer;
 }
 
 .resources-button {
     display: flex;
     align-items: center;
     align-self: rigth;
+}
+
+.resources-button:hover {
+    color: #5271F3;
+    cursor: pointer;
 }
 
 .login-button {
@@ -67,6 +73,7 @@ body {
 }
 
 .language-button {
+    color: #707070;
     width: 10vw;
     display: flex;
     align-items: center;

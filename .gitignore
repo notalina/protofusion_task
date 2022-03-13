@@ -1,4 +1,4 @@
 /img/temp
-*/.DS_Store
-
-
+.DS_Store
+temp.css
+jquery-3.6.0.js

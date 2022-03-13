@@ -1,17 +1,40 @@
 document.addEventListener("DOMContentLoaded", function(){
-
-    if (document.documentElement.clientWidth > 425) {
+    if (document.documentElement.clientWidth > 720) {
         ArrangePagination();
-    } else {
+    } else if (document.documentElement.clientWidth <= 720) {
         ArrangeSlider();
     }
-
 });
 
 function ArrangeSlider(){
-    body = document.getElementsByName("body");
-    paginationElement = document.getElementsByClass("pagination")[0];
-    body.removeChild(paginationElement);
+    let images_paths = [
+        "img/IMG1@2x.png",
+        "img/IMG2@2x.png",
+        "img/IMG3@2x.png",
+        "img/IMG4@2x.png",
+        "img/IMG5@2x.png",
+        "img/IMG6@2x.png"
+    ];
+
+    arrowRigthSlider = document.getElementById("arrow-right-slider");
+    arrowRigthSlider.addEventListener("click", function(){
+        imgToChange = document.getElementsByClassName("specs-img")[0];
+        currentDot = document.getElementsByClassName("current")[0];
+        currentDotNumber = +currentDot.id[10];
+        if (currentDotNumber == 5){
+            imgToChange.src = images_paths[0];
+            nextDot = document.getElementById("indicator-"+0)
+            currentDot.classList.remove("current");
+            nextDot.classList.toggle("current");
+        } else {
+            imgNumber = currentDotNumber+1;
+            imgToChange.src = images_paths[imgNumber];
+            currentDot.classList.remove("current");
+            nextDot = document.getElementById("indicator-"+imgNumber)
+            nextDot.classList.toggle("current");
+        }
+    })
+    
 };
 
 function ArrangePagination(){
