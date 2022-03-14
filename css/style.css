@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Poppins:wght@300;400;600;700&display=swap');
 
 body {
-    background: transparent url("img/main-page-background.png") no-repeat;
+    background: transparent url("../img/main-page-background.png") no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -141,4 +141,42 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 10.625vw;
+}
+
+@media screen and (max-width: 1023px) {
+    .company-logo{
+        font-size: 20px;
+    }
+    .nav-bar{
+        font-size: 13px;
+    }
+
+    .login-button{
+        height: 3.5vh;
+    }
+    
+    .title-text{
+        width: 50vw;
+        font-size: 6vw;
+        line-height: 10vh;
+    }
+
+    .subtitle-text {
+        width: auto;
+        font-size: 2vh;
+        line-height: 3vh;
+    }
+
+    .start-button {
+        margin-top: 10vh;
+        width: 20vw;
+        height: 12vh;
+
+    }
+
+    .start-label{
+        width: 13vw;
+        font-size: 1.8vw;
+
+    }
 }
